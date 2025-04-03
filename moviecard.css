@@ -1,0 +1,88 @@
+/* Movie section styles */
+.movies {
+    background-color: #f5f5f5; /* Match description background */
+    padding: 2rem;
+  }
+  
+  .movies-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to next line */
+    gap: 1.5rem; /* Space between cards */
+    justify-content: center
+    ; /* Center cards horizontally */
+  }
+  
+  .movie-card {
+    position: relative; /* For absolute positioning of title and badge */
+    width: 200px; /* Fixed width for consistency */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure content stays within bounds */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove any inline spacing */
+  }
+  
+  .movie-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #f0f0f0; /* Soft white text */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .hd-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f5a623; /* Orange background for HD badge */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+  }
+  
+  /* Responsive adjustments for movie cards */
+  @media (max-width: 768px) {
+    .movie-card {
+      width: 150px; /* Smaller cards on tablet */
+    }
+    .movie-title {
+      font-size: 0.9rem;
+      padding: 0.4rem;
+    }
+    .hd-badge {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-card {
+      width: 120px; /* Even smaller on mobile */
+    }
+    .movie-title {
+      font-size: 0.8rem;
+      padding: 0.3rem;
+    }
+    .hd-badge {
+      font-size: 0.6rem;
+      padding: 0.1rem 0.3rem;
+    }
+  }

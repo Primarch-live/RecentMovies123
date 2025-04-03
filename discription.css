@@ -1,0 +1,76 @@
+/* Description section styles */
+.description {
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    padding: 4rem 2rem; /* Ample padding for spacing */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .description-content {
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto; /* Center the content block */
+    opacity: 0; /* Start hidden for animation */
+    animation: zoomIn 1s ease forwards; /* Zoom-in animation */
+  }
+  
+  .description h1 {
+    color: #333; /* Dark gray for readability */
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* Space between text and image */
+  }
+  
+  .tv-icon {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  .description p {
+    color: #555; /* Slightly lighter gray for paragraph */
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Zoom-in animation */
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive adjustments for description */
+  @media (max-width: 768px) {
+    .description {
+      padding: 2rem 1rem; /* Reduce padding on small screens */
+    }
+    .description h1 {
+      font-size: 1.8rem; /* Smaller heading */
+      flex-direction: column; /* Stack text and image */
+      gap: 1rem;
+    }
+    .description p {
+      font-size: 1rem; /* Smaller paragraph */
+    }
+    .tv-icon {
+      width: 30px; /* Smaller icon */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .description h1 {
+      font-size: 1.5rem;
+    }
+    .description p {
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,91 @@
+/* Footer styles */
+.footer {
+    width: 100%;
+    color: #f0f0f0; /* Soft white for text */
+  }
+  
+  /* Top section */
+  .footer-top {
+    background-color: #373b41; /* Specified background color */
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between; /* Left and right alignment */
+    align-items: center;
+   
+    margin: 0 auto;
+  }
+  
+  .footer-brand h1 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-brand h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .footer-subscribe h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+  
+  .footer-subscribe a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-subscribe a:hover {
+    color: #d4e4d4; /* Match navbar hover color */
+  }
+  
+  /* Bottom section */
+  .footer-bottom {
+    background-color: #222021; /* Specified background color */
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .footer-bottom h3 {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+  
+  /* Responsive adjustments for footer */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align to left */
+      gap: 1.5rem; /* Space between sections */
+      padding: 1.5rem;
+    }
+    .footer-subscribe {
+      text-align: left; /* Align text to left */
+    }
+    .footer-subscribe h2 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-top {
+      padding: 1rem;
+    }
+    .footer-brand h1 {
+      font-size: 1.3rem;
+    }
+    .footer-brand h3 {
+      font-size: 0.9rem;
+    }
+    .footer-subscribe h2 {
+      font-size: 0.9rem;
+    }
+    .footer-bottom h3 {
+      font-size: 0.8rem;
+    }
+  }
